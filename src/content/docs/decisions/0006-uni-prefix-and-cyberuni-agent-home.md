@@ -56,9 +56,9 @@ Rejected, with the state checked on 2026-10-17:
   an npm login. Both names were free on 2026-10-17 and are not reserved.
 - The `uni-*` npm names above were free on 2026-10-17.
 - Not every plugin is renamed. Coined names that already stand alone keep their names.
-- The `cyber-agent-harness` plugin needs a new `uni-` name. It is less a harness than a
+- The `cyber-agent-harness` plugin becomes `uni-agent-kit`. It is less a harness than a
   toolkit for agent configuration: harness detection and queries, plus layered reference
-  documents. `uni-harness` is taken; the name is still open.
+  documents. `uni-harness` was taken.
 - Still open: whether `unional-agent`, created on GitHub on 2026-10-17, is kept as a
   placeholder or deleted.
 - Converting the npm user `@unional` into an org is not needed for this decision.
