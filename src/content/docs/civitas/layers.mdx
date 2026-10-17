@@ -1,6 +1,6 @@
 ---
 title: Layers
-description: The layers of cyberuni-agent, what each one owns, and the rules for which way dependencies point.
+description: The layers of civitas, what each one owns, and the rules for which way dependencies point.
 ---
 
 import LayerDiagram from '../../../components/LayerDiagram.astro'
@@ -72,7 +72,7 @@ or a person can override a plugin's default without editing the plugin.
 harness.
 
 The foundation depends on no agent-layer package, so every layer above can build on it,
-and so can tools outside cyberuni-agent.
+and so can tools outside civitas.
 
 ## Dependency rules
 
@@ -89,6 +89,6 @@ and so can tools outside cyberuni-agent.
    passes, so the runtime works without cynapse.
    [Decision 0004](/decisions/0004-opaque-service-keys/).
 5. **The foundation depends on no agent-layer package.** uni-agent-kit and
-   universal-plugin depend on nothing in cyberuni-agent and on no other agent tool, and
+   universal-plugin depend on no other civitas package and on no other agent tool, and
    every layer may depend on them. Ordinary npm libraries are fine.
    [Decision 0005](/decisions/0005-foundation-depends-on-no-agent-layer-package/).
