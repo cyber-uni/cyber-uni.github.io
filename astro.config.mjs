@@ -4,9 +4,16 @@ import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
 
 // This is the org's root Pages site (`<org>.github.io`), so it is served at `/` and needs no
-// `base`. Internal links in content are bare paths (`/architecture/layers/`).
+// `base`. Internal links in content are bare paths (`/civitas/layers/`).
 export default defineConfig({
   site: "https://cyberuni-agent.github.io",
+  // The civitas pages moved under /civitas/; the old paths keep working.
+  redirects: {
+    "/what-is": "/civitas/",
+    "/architecture/layers": "/civitas/layers/",
+    "/architecture/independent-use": "/civitas/independent-use/",
+    "/architecture/vocabulary": "/civitas/vocabulary/",
+  },
   vite: {
     plugins: [tailwindcss()],
   },
@@ -14,7 +21,7 @@ export default defineConfig({
     starlight({
       title: "cyberuni-agent",
       description:
-        "A self-contained system for running AI coding agents: fleet, runtime, communication, and change process.",
+        "The organization behind the uni-* AI coding agent plugins, and civitas, the design they follow.",
       // The cyber-* family mark: the shared command reticle around a per-package glyph
       // (cyberuni/cyber-mux docs/design/icon-system.md). The favicon self-themes; the header
       // logo ships as a light/dark pair because this site picks its theme by `data-theme`,
@@ -38,16 +45,22 @@ export default defineConfig({
           "https://github.com/cyberuni-agent/cyberuni-agent.github.io/edit/main/",
       },
       sidebar: [
-        { label: "What is cyberuni-agent", slug: "what-is" },
         {
-          label: "Architecture",
+          label: "cyberuni-agent",
           items: [
-            { label: "Layers", slug: "architecture/layers" },
-            { label: "Using parts on their own", slug: "architecture/independent-use" },
-            { label: "Fleet vocabulary", slug: "architecture/vocabulary" },
+            { label: "About the org", slug: "about" },
+            { label: "Components", slug: "components" },
           ],
         },
-        { label: "Components", slug: "components" },
+        {
+          label: "Civitas",
+          items: [
+            { label: "What is civitas", slug: "civitas" },
+            { label: "Layers", slug: "civitas/layers" },
+            { label: "Using parts on their own", slug: "civitas/independent-use" },
+            { label: "Fleet vocabulary", slug: "civitas/vocabulary" },
+          ],
+        },
         {
           label: "Decisions",
           items: [

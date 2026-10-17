@@ -1,6 +1,6 @@
 ---
 title: Fleet vocabulary
-description: The roles and units of work in cyberuni-agent's fleet layer.
+description: The roles and units of work in the fleet layer of civitas.
 ---
 
 :::caution[Design in progress]

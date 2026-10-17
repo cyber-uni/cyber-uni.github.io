@@ -1,8 +1,9 @@
 # cyberuni-agent.github.io
 
-The site for [cyberuni-agent](https://cyberuni-agent.github.io): a self-contained system for
-running AI coding agents. It covers the architecture across packages, the fleet vocabulary,
-the component index, and the decisions that span more than one package.
+The site for [cyberuni-agent](https://cyberuni-agent.github.io), the organization behind the
+`uni-*` AI coding agent plugins. It also documents civitas, the design those packages follow:
+the layer architecture, the fleet vocabulary, the component index, and the decisions that
+span more than one package.
 
 ## Development
 

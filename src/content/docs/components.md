@@ -1,6 +1,6 @@
 ---
 title: Components
-description: Every cyberuni-agent package, its job, its status, and the name it goes by today.
+description: Every package in the agent line, its job, its status, and the name it goes by today.
 ---
 
 Status as of October 2026. "Published" means on npm; "design" means the model is written and
@@ -10,6 +10,8 @@ The agent plugins are moving to `uni-*` names
 ([decision 0006](/decisions/0006-uni-prefix-and-cyberuni-agent-home/)). No rename has
 shipped yet: each package still goes by the name in the "Name today" column, and its
 repository is still in cyberuni. cynapse and universal-plugin keep their names.
+
+The Layer column places each package in the [civitas layers](/civitas/layers/).
 
 | Package | Name today | Layer | Job | Status |
 | --- | --- | --- | --- | --- |

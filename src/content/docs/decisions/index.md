@@ -1,10 +1,13 @@
 ---
 title: Decisions
-description: Architecture decisions that span more than one cyberuni-agent package.
+description: Decisions that span more than one package, from the civitas rules to the names the packages take.
 ---
 
 These records hold the rules no single package can decide alone. A decision inside one
 package stays in that package's own `docs/adr/` and cites these where it relies on them.
+
+Records 0001 to 0005 are rules of the [civitas](/civitas/) design. Record 0006 is about the
+organization: the names the packages take and where they live.
 
 An accepted record is never rewritten. A change of mind is a new record that supersedes
 the old one.
