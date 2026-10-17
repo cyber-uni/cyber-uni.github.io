@@ -1,6 +1,6 @@
-# cyber-civitas.github.io
+# cyberuni-agent.github.io
 
-The site for [cyber-civitas](https://cyber-civitas.github.io): a self-contained system for
+The site for [cyberuni-agent](https://cyberuni-agent.github.io): a self-contained system for
 running AI coding agents. It covers the architecture across packages, the fleet vocabulary,
 the component index, and the decisions that span more than one package.
 
