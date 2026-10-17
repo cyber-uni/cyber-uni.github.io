@@ -4,8 +4,8 @@ Guidance for AI coding assistants working in this repository.
 
 ## What this repo is
 
-The organization site for cyber-civitas, an Astro + Starlight site served at
-`https://cyber-civitas.github.io`. It holds what spans packages: the layer architecture,
+The organization site for cyberuni-agent, an Astro + Starlight site served at
+`https://cyberuni-agent.github.io`. It holds what spans packages: the layer architecture,
 the fleet vocabulary, the component index, and cross-package decision records. A package's
 own behavior is documented in that package's repository, not here.
 
@@ -34,22 +34,15 @@ pnpm typecheck    # astro check, 0 errors
 
 ## The glyph
 
-The mark is three citizens, the front one an agent whose head is the four-point AI spark
-(candidate D in the 2026-10-04 civitas glyph study), inside the shared cyber-* frame. The name
-is about the community, not the building, so the glyph draws the citizens: people and agents as
-one citizenry. At 16px the spark fills in and the mark reads as a group of three, which stays
-legible; from 32px up the spark shows.
+The mark is the cyberuni-agent org mark: a lowercase `u` with the four-point AI spark above
+it, inside the shared cyber-* frame. It reads as *uni*, and agents. It was candidate C of four
+in the org's glyph study; the others were the cyber-civitas citizens, a plug with the spark, and
+the spark alone. Its source of truth is `brand/` in `cyberuni-agent/.github`, whose AGENTS.md
+"The glyph" section records the study; copy changes from there rather than editing here.
 
-The two figures behind are cut by a mask: the front figure stroked at width 10, so a 5-unit gap
-separates them at every size. Keep the mask when editing the shapes, or the figures merge into
-one blob at favicon size.
-
-Fallback, if the spark ever needs to go: **C**, the same group with a round head
-(`<circle cx="64" cy="46" r="11"/>`) in place of the spark.
-
-Rejected in the study: the tower and arcology glyphs (they draw the building the rename moved
-away from), stacked layers (a diagram, not a community), a ring of citizens (a loading spinner at
-16px), and a hemicycle assembly (one-pixel seats at 16px).
+The `u` is a stroke of width 12 (`M44 66v8a20 20 0 0 0 40 0v-8`); the spark is filled
+(`M64 30q2 9 10 10.5q-8 1.5-10 10.5q-2-9-10-10.5q8-1.5 10-10.5Z`). The light and dark files
+use ink `#10111a` and `#f7f8f8`.
 
 A glyph change touches all three SVGs, `public/img/logo.svg`, `src/assets/logo-light.svg` and
 `src/assets/logo-dark.svg`, and the two org avatar renders, `brand/org-avatar-light.png` and

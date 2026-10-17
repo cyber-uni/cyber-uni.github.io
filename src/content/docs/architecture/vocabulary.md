@@ -1,11 +1,11 @@
 ---
 title: Fleet vocabulary
-description: The roles and units of work in cyber-civitas's fleet layer.
+description: The roles and units of work in cyberuni-agent's fleet layer.
 ---
 
 :::caution[Design in progress]
 The project-level Captain and the mission/sortie split are agreed design, not yet built.
-The current cyberfleet release still treats each worktree session as a ship. Tracked in
+The current release of uni-fleet (still published as `cyberfleet`) treats each worktree session as a ship. Tracked in
 [cyberuni/cyberfleet#24](https://github.com/cyberuni/cyberfleet/issues/24).
 :::
 

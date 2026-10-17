@@ -1,6 +1,6 @@
 ---
 title: Layers
-description: The layers of cyber-civitas, what each one owns, and the rules for which way dependencies point.
+description: The layers of cyberuni-agent, what each one owns, and the rules for which way dependencies point.
 ---
 
 import LayerDiagram from '../../../components/LayerDiagram.astro'
@@ -14,7 +14,7 @@ stable, and nothing below may depend on anything above.
 
 ### Products
 
-**cyberfleet** is policy. It decides who owns a piece of work, how a request reaches the
+**uni-fleet** is policy. It decides who owns a piece of work, how a request reaches the
 right project, and what the Council sees. It composes the runtime, the communication
 channels, and the process layer, and nothing depends on it. It is concrete and changes
 often, which is why it sits at the top.
@@ -23,14 +23,14 @@ often, which is why it sits at the top.
 Pods, pending decisions, and unread findings. It is planned
 ([cyberuni/cyberfleet#24](https://github.com/cyberuni/cyberfleet/issues/24)). It brings
 every lower layer together, so it is the most volatile part of the system and belongs at
-the top with cyberfleet.
+the top with uni-fleet.
 
 ### Process
 
-**cyber-truss** holds a repository in its settled state across every change: it works out
+**uni-truss** holds a repository in its settled state across every change: it works out
 which artifacts a change has left inconsistent and what each must now meet.
-**cyber-sdd** is Spec-Driven Development for agents, with the ACED and Quill domain
-plugins. cyber-truss describes SDD as one instance of its model. Neither depends on the
+**uni-sdd** is Spec-Driven Development for agents, with the ACED and Quill domain
+plugins. uni-truss describes SDD as one instance of its model. Neither depends on the
 fleet.
 
 ### Communication
@@ -45,10 +45,10 @@ cynapse does one job: communication. It does not spawn, wake, or supervise anyth
 
 ### Runtime
 
-**cyberlegion** starts, stops, restarts, and nudges agent sessions, rings the doorbell
+**uni-legion** starts, stops, restarts, and nudges agent sessions, rings the doorbell
 when something needs a session's attention, and knows whether a session is alive. It owns
 the fenced lease that gives a service one authoritative runtime, and the workspaces agents
-work in. It drives panes through **cyber-mux**, or runs a forked subagent where there is no
+work in. It drives panes through **uni-mux**, or runs a forked subagent where there is no
 multiplexer.
 
 ### Stores
@@ -59,20 +59,20 @@ themselves, following [dna](https://github.com/cyberuni/dna).
 
 ### Foundation
 
-**agent-harness** is the toolkit for working across agent harnesses. It detects which
+**uni-agent-kit** is the toolkit for working across agent harnesses. It detects which
 harness is running, among Claude Code, Cursor, Codex, GitHub Copilot CLI, and others, and
 reports `unknown` rather than guess. For a known harness it answers what that harness
 holds: the directories it reads skills from, the plugins installed and enabled, and where
-managed policy lives. Merged but not yet released, it also resolves a named reference
+managed policy lives. It also resolves a named reference
 document, a Markdown file an agent reads on demand, through the managed, project
 (`.agents/references/`), user (`~/.agents/references/`), and plugin tiers, so a repository
 or a person can override a plugin's default without editing the plugin.
 
-**universal-plugin** builds on agent-harness: one plugin manifest, generated for every
+**universal-plugin** builds on uni-agent-kit: one plugin manifest, generated for every
 harness.
 
 The foundation depends on no agent-layer package, so every layer above can build on it,
-and so can tools outside cyber-civitas.
+and so can tools outside cyberuni-agent.
 
 ## Dependency rules
 
@@ -82,13 +82,13 @@ and so can tools outside cyber-civitas.
 2. **Each fact has one home.** A coordination claim between participants lives in cynapse.
    A session's liveness, and the lease that names which session drives a service, live in
    the runtime. [Decision 0002](/decisions/0002-claims-and-leases/).
-3. **Worktrees are reached through the runtime.** cyber-mux manages worktrees because
+3. **Worktrees are reached through the runtime.** uni-mux manages worktrees because
    multiplexers do, and only the runtime's workspace adapter calls that part of it.
    [Decision 0003](/decisions/0003-worktrees-through-the-runtime/).
 4. **The runtime takes keys, not identities.** A service is keyed by whatever the caller
    passes, so the runtime works without cynapse.
    [Decision 0004](/decisions/0004-opaque-service-keys/).
-5. **The foundation depends on no agent-layer package.** agent-harness and
-   universal-plugin depend on nothing in cyber-civitas and on no other agent tool, and
+5. **The foundation depends on no agent-layer package.** uni-agent-kit and
+   universal-plugin depend on nothing in cyberuni-agent and on no other agent tool, and
    every layer may depend on them. Ordinary npm libraries are fine.
    [Decision 0005](/decisions/0005-foundation-depends-on-no-agent-layer-package/).

@@ -1,6 +1,6 @@
 ---
 title: Using parts on their own
-description: Which cyber-civitas packages are useful without the rest, and what stays together.
+description: Which cyberuni-agent packages are useful without the rest, and what stays together.
 ---
 
 A package is worth releasing on its own when someone would use it on its own. Each package
@@ -9,13 +9,13 @@ group of users take the other's half.
 
 | Package | Use it alone when you want to |
 | --- | --- |
-| `agent-harness` | make a tool behave correctly under whichever agent harness runs it, or let a repository or user override a named document |
-| `cyber-mux` | drive terminal panes from any tool, whichever multiplexer you are in |
-| `cyberlegion` | spawn and supervise agent sessions, with no messaging |
+| `uni-agent-kit` | make a tool behave correctly under whichever agent harness runs it, or let a repository or user override a named document |
+| `uni-mux` | drive terminal panes from any tool, whichever multiplexer you are in |
+| `uni-legion` | spawn and supervise agent sessions, with no messaging |
 | `cynapse` and Cortex | keep durable channels between agents and people, with no spawning: two sessions you opened by hand can still talk |
-| `cyber-truss`, `cyber-sdd` | run a change process inside one repository, with no fleet |
-| `cyber-asana`, `cyber-slack`, `cyber-figma` | give agents a system of record |
-| `cyberfleet` and the Command Center | run the whole fleet; this is the one that needs everything above |
+| `uni-truss`, `uni-sdd` | run a change process inside one repository, with no fleet |
+| `uni-asana`, `uni-slack`, `uni-figma` | give agents a system of record |
+| `uni-fleet` and the Command Center | run the whole fleet; this is the one that needs everything above |
 
 ## What stays together
 

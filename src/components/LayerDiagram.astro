@@ -1,15 +1,15 @@
 ---
-// The cyber-civitas layer diagram. Inline SVG so it scales to the content column and takes
+// The cyberuni-agent layer diagram. Inline SVG so it scales to the content column and takes
 // its colors from Starlight's theme variables, which flip with `data-theme`.
 ---
 
 <figure class="layers">
 	<svg viewBox="0 0 720 560" role="img" aria-labelledby="layers-title layers-desc">
-		<title id="layers-title">cyber-civitas layers</title>
+		<title id="layers-title">cyberuni-agent layers</title>
 		<desc id="layers-desc">
-			Products (cyberfleet, Command Center) depend on Process (cyber-truss, cyber-sdd),
-			Communication (cynapse) and Runtime (cyberlegion). Process depends on Communication.
-			Runtime depends on Communication and on cyber-mux. Communication refers to the stores.
+			Products (uni-fleet, Command Center) depend on Process (uni-truss, uni-sdd),
+			Communication (cynapse) and Runtime (uni-legion). Process depends on Communication.
+			Runtime depends on Communication and on uni-mux. Communication refers to the stores.
 		</desc>
 		<defs>
 			<marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
@@ -19,14 +19,14 @@
 
 		<rect class="box accent" x="20" y="20" width="680" height="70" rx="8" />
 		<text class="layer" x="36" y="44">PRODUCTS</text>
-		<text class="name" x="36" y="72">cyberfleet</text>
+		<text class="name" x="36" y="72">uni-fleet</text>
 		<text class="note" x="140" y="72">Operator · Captain · Pod · sorties</text>
 		<text class="name" x="440" y="72">Command Center</text>
 		<text class="note" x="590" y="72">(planned)</text>
 
 		<rect class="box" x="20" y="130" width="240" height="60" rx="8" />
 		<text class="layer" x="36" y="152">PROCESS</text>
-		<text class="name" x="36" y="177">cyber-truss · cyber-sdd</text>
+		<text class="name" x="36" y="177">uni-truss · uni-sdd</text>
 
 		<rect class="box" x="20" y="230" width="320" height="130" rx="8" />
 		<text class="layer" x="36" y="252">COMMUNICATION</text>
@@ -37,7 +37,7 @@
 
 		<rect class="box" x="380" y="230" width="320" height="130" rx="8" />
 		<text class="layer" x="396" y="252">RUNTIME</text>
-		<text class="name" x="396" y="278">cyberlegion</text>
+		<text class="name" x="396" y="278">uni-legion</text>
 		<text class="note" x="396" y="302">units, spawn, stop, restart, nudge</text>
 		<text class="note" x="396" y="324">doorbell, presence, leases</text>
 		<text class="note" x="396" y="346">workspaces</text>
@@ -48,14 +48,14 @@
 
 		<rect class="box" x="380" y="400" width="320" height="70" rx="8" />
 		<text class="layer" x="396" y="422">PANES</text>
-		<text class="name" x="396" y="452">cyber-mux</text>
+		<text class="name" x="396" y="452">uni-mux</text>
 		<text class="note" x="490" y="452">tmux, herdr, WezTerm…</text>
 
 		<rect class="box dashed" x="20" y="500" width="680" height="44" rx="8" />
 		<text class="layer" x="36" y="527">MODEL</text>
 		<text class="note" x="96" y="527">dna</text>
 		<text class="layer" x="300" y="527">FOUNDATION</text>
-		<text class="note" x="390" y="527">agent-harness · universal-plugin</text>
+		<text class="note" x="390" y="527">uni-agent-kit · universal-plugin</text>
 
 		<g class="edge">
 			<line x1="140" y1="90" x2="140" y2="128" marker-end="url(#arrow)" />
