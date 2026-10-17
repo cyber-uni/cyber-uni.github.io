@@ -57,6 +57,7 @@ export default defineConfig({
             { label: "0003 Worktrees through the runtime", slug: "decisions/0003-worktrees-through-the-runtime" },
             { label: "0004 Opaque service keys", slug: "decisions/0004-opaque-service-keys" },
             { label: "0005 Foundation depends on no agent layer", slug: "decisions/0005-foundation-depends-on-no-agent-layer-package" },
+            { label: "0006 uni- prefix and cyberuni-agent home", slug: "decisions/0006-uni-prefix-and-cyberuni-agent-home" },
           ],
         },
       ],
