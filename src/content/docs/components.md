@@ -30,4 +30,4 @@ The Layer column places each package in the [civitas layers](/civitas/layers/).
 | [universal-plugin](https://github.com/cyberuni/universal-plugin) | `universal-plugin` | Foundation | One plugin manifest, generated for every harness | published 0.15 |
 
 The repositories live in [cyberuni](https://github.com/cyberuni). The
-[cyberuni-agent](https://github.com/cyberuni-agent) organization holds this site and `upx`.
+[spikyuni](https://github.com/spikyuni) organization holds this site and `upx`.
