@@ -71,6 +71,7 @@ export default defineConfig({
             { label: "0004 Opaque service keys", slug: "decisions/0004-opaque-service-keys" },
             { label: "0005 Foundation depends on no agent layer", slug: "decisions/0005-foundation-depends-on-no-agent-layer-package" },
             { label: "0006 uni- prefix and cyberuni-agent home", slug: "decisions/0006-uni-prefix-and-cyberuni-agent-home" },
+            { label: "0007 The spikyuni marketplace", slug: "decisions/0007-spikyuni-marketplace" },
             { label: "0008 Move to spikyuni", slug: "decisions/0008-spikyuni-home" },
           ],
         },
