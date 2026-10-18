@@ -4,8 +4,8 @@ Guidance for AI coding assistants working in this repository.
 
 ## What this repo is
 
-The organization site for cyberuni-agent, an Astro + Starlight site served at
-`https://cyberuni-agent.github.io`. It holds what spans packages: the layer architecture,
+The organization site for spikyuni, an Astro + Starlight site served at
+`https://spikyuni.github.io`. It holds what spans packages: the layer architecture,
 the fleet vocabulary, the component index, and cross-package decision records. A package's
 own behavior is documented in that package's repository, not here.
 
@@ -13,8 +13,8 @@ own behavior is documented in that package's repository, not here.
 
 The site covers two things. Keep them apart in every page you write.
 
-- **cyberuni-agent is the organization.** It publishes the `uni-*` agent plugins. Pages
-  about who publishes, what the plugins are, and where to get them say cyberuni-agent:
+- **spikyuni is the organization.** It publishes the `uni-*` agent plugins. Pages
+  about who publishes, what the plugins are, and where to get them say spikyuni:
   the home page, `about.md`, and `components.md`.
 - **civitas is the design** behind how those packages fit together: the layers, the
   vocabulary, and the rules no single package decides. Its pages live under
@@ -57,10 +57,10 @@ pnpm typecheck    # astro check, 0 errors
 
 ## The glyph
 
-The mark is the cyberuni-agent org mark: a lowercase `u` with the four-point AI spark above
+The mark is the spikyuni org mark: a lowercase `u` with the four-point AI spark above
 it, inside the shared cyber-* frame. It reads as *uni*, and agents. It was candidate C of four
 in the org's glyph study; the others were the cyber-civitas citizens, a plug with the spark, and
-the spark alone. Its source of truth is `brand/` in `cyberuni-agent/.github`, whose AGENTS.md
+the spark alone. Its source of truth is `brand/` in `spikyuni/.github`, whose AGENTS.md
 "The glyph" section records the study; copy changes from there rather than editing here.
 
 The `u` is a stroke of width 12 (`M44 66v8a20 20 0 0 0 40 0v-8`); the spark is filled

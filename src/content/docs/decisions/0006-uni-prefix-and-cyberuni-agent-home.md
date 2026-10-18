@@ -3,7 +3,8 @@ title: "0006: Agent plugins take the uni- prefix and live in cyberuni-agent"
 description: The agent plugins are published as uni-* from a cyberuni-agent GitHub org and npm scope, replacing the cyber-* prefix and the cyber-civitas and cyber-arcology brands.
 ---
 
-**Status:** Accepted, 2026-10-17.
+**Status:** Accepted, 2026-10-17. The org choice is superseded by
+[0008](/decisions/0008-spikyuni-home/): the home is now `spikyuni`. The `uni-` prefix stands.
 
 ## Context
 

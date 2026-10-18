@@ -6,7 +6,7 @@ import { defineConfig } from "astro/config";
 // This is the org's root Pages site (`<org>.github.io`), so it is served at `/` and needs no
 // `base`. Internal links in content are bare paths (`/civitas/layers/`).
 export default defineConfig({
-  site: "https://cyberuni-agent.github.io",
+  site: "https://spikyuni.github.io",
   // The civitas pages moved under /civitas/; the old paths keep working.
   redirects: {
     "/what-is": "/civitas/",
@@ -19,7 +19,7 @@ export default defineConfig({
   },
   integrations: [
     starlight({
-      title: "cyberuni-agent",
+      title: "spikyuni",
       description:
         "The organization behind the uni-* AI coding agent plugins, and civitas, the design they follow.",
       // The cyber-* family mark: the shared command reticle around a per-package glyph
@@ -30,23 +30,23 @@ export default defineConfig({
       logo: {
         light: "./src/assets/logo-light.svg",
         dark: "./src/assets/logo-dark.svg",
-        alt: "cyberuni-agent",
+        alt: "spikyuni",
       },
       social: [
         {
           icon: "github",
           label: "GitHub",
-          href: "https://github.com/cyberuni-agent",
+          href: "https://github.com/spikyuni",
         },
       ],
       customCss: ["./src/styles/global.css"],
       editLink: {
         baseUrl:
-          "https://github.com/cyberuni-agent/cyberuni-agent.github.io/edit/main/",
+          "https://github.com/spikyuni/spikyuni.github.io/edit/main/",
       },
       sidebar: [
         {
-          label: "cyberuni-agent",
+          label: "spikyuni",
           items: [
             { label: "About the org", slug: "about" },
             { label: "Components", slug: "components" },
@@ -71,6 +71,7 @@ export default defineConfig({
             { label: "0004 Opaque service keys", slug: "decisions/0004-opaque-service-keys" },
             { label: "0005 Foundation depends on no agent layer", slug: "decisions/0005-foundation-depends-on-no-agent-layer-package" },
             { label: "0006 uni- prefix and cyberuni-agent home", slug: "decisions/0006-uni-prefix-and-cyberuni-agent-home" },
+            { label: "0008 Move to spikyuni", slug: "decisions/0008-spikyuni-home" },
           ],
         },
       ],
