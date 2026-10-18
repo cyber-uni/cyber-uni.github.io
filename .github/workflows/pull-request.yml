@@ -1,0 +1,18 @@
+name: pull-request
+on:
+  pull_request:
+    types: [opened, synchronize]
+  merge_group:
+
+permissions: {}
+
+jobs:
+  code:
+    uses: spikyuni/.github/.github/workflows/pnpm-verify.yml@v1
+    permissions:
+      contents: read
+    with:
+      os: '["ubuntu-latest"]'
+      node-version: '["lts/*"]'
+      playwright-browsers: ''
+      codecov: false
