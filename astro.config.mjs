@@ -73,6 +73,7 @@ export default defineConfig({
             { label: "0006 uni- prefix and cyberuni-agent home", slug: "decisions/0006-uni-prefix-and-cyberuni-agent-home" },
             { label: "0007 The spikyuni marketplace", slug: "decisions/0007-spikyuni-marketplace" },
             { label: "0008 Move to spikyuni", slug: "decisions/0008-spikyuni-home" },
+            { label: "0009 Move to cyber-uni", slug: "decisions/0009-cyber-uni-home" },
           ],
         },
       ],

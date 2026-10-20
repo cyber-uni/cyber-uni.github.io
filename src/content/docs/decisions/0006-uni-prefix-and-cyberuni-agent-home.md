@@ -4,7 +4,9 @@ description: The agent plugins are published as uni-* from a cyberuni-agent GitH
 ---
 
 **Status:** Accepted, 2026-10-17. The org choice is superseded by
-[0008](/decisions/0008-spikyuni-home/): the home is now `spikyuni`. The `uni-` prefix stands.
+[0008](/decisions/0008-spikyuni-home/) and then by [0009](/decisions/0009-cyber-uni-home/):
+the home is now `cyber-uni`. The `uni-` prefix is superseded by
+[0009](/decisions/0009-cyber-uni-home/): the plugins keep their cyber-* names.
 
 ## Context
 
