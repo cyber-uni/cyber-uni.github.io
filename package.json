@@ -22,7 +22,7 @@
     "@tailwindcss/vite": "^4.3.2",
     "tailwindcss": "^4.3.2",
     "typescript": "^6.0.3",
-    "vite": "^7.3.2"
+    "vite": "^8.3.4"
   },
   "packageManager": "pnpm@11.0.0",
   "engines": {
