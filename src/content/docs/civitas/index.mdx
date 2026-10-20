@@ -1,6 +1,6 @@
 ---
 title: What is civitas
-description: Civitas, the design behind the spikyuni packages. The problem it addresses, the shape of the answer, and what it deliberately is not.
+description: Civitas, the design behind the cyber-uni packages. The problem it addresses, the shape of the answer, and what it deliberately is not.
 ---
 
 import lightMark from '../../../assets/civitas-light.svg'
@@ -19,13 +19,9 @@ you, and leave every repository in a settled state.
 
 Civitas is a design, not a package. Nothing installs "civitas". It is the set of layers,
 vocabulary, and rules that the packages follow so they fit together.
-[spikyuni](/about/) is the organization those packages are moving to.
-
-The agent plugins are moving to `uni-*` names under the spikyuni organization
-([decision 0006](/decisions/0006-uni-prefix-and-cyberuni-agent-home/),
-[decision 0008](/decisions/0008-spikyuni-home/)). This site uses the
-new names. Each package still ships under its old name today;
-[Components](/components/) lists both.
+[cyber-uni](/about/) is the organization those packages are moving to. Each one keeps the
+name it ships under ([decision 0009](/decisions/0009-cyber-uni-home/)).
+[Components](/components/) lists them all.
 
 ## The problem
 
@@ -47,10 +43,10 @@ Four concerns, each in its own layer, each usable on its own:
 
 | Layer | Answers | Packages |
 | --- | --- | --- |
-| Fleet | Who does the work, and who owns which part of it | `uni-fleet` |
-| Runtime | Starting, stopping, and waking agent sessions | `uni-legion`, `uni-mux` |
+| Fleet | Who does the work, and who owns which part of it | `cyberfleet` |
+| Runtime | Starting, stopping, and waking agent sessions | `cyberlegion`, `cyber-mux` |
 | Communication | Where agents and people talk, durably | `cynapse` |
-| Process | How a change reaches a settled, consistent repository | `uni-truss`, `uni-sdd` |
+| Process | How a change reaches a settled, consistent repository | `cyber-truss`, `cyber-sdd` |
 
 Systems of record stay where they are. Issues stay in GitHub, tasks in Asana or Linear.
 Civitas refers to them and writes back what their readers need to see, and never copies
@@ -62,9 +58,8 @@ them.
 
 Truss is a separate design idea: the convergence layer, the lattice that holds a
 repository in its settled state across every change. Civitas places it in the process
-layer, and leaves its model to truss. Truss keeps its own repository, `cyber-truss`, moving
-to `uni-truss`, and its own documentation at
-[cyberuni.github.io/cyber-truss](https://cyberuni.github.io/cyber-truss/).
+layer, and leaves its model to truss. Truss keeps its own repository, `cyber-truss`, and
+its own documentation at [cyberuni.github.io/cyber-truss](https://cyberuni.github.io/cyber-truss/).
 
 ## What it is not
 
@@ -84,7 +79,8 @@ single structure that holds a city. It was renamed cyber-civitas because what ho
 together is the community, not the building.
 
 [Decision 0006](/decisions/0006-uni-prefix-and-cyberuni-agent-home/) retired cyber-civitas
-and cyber-arcology as brands: the agent plugins take the `uni-` prefix and move to the
-cyberuni-agent organization. [Decision 0008](/decisions/0008-spikyuni-home/) moved that
-organization to spikyuni. The design keeps the name civitas. The repositories still live
-in cyberuni until each one moves.
+and cyber-arcology as brands, and chose the `uni-` prefix and the cyberuni-agent
+organization for the agent plugins. [Decision 0008](/decisions/0008-spikyuni-home/) moved that
+organization to spikyuni. [Decision 0009](/decisions/0009-cyber-uni-home/) moved it to
+cyber-uni and retired the `uni-` prefix: the plugins keep their cyber-* names. The design
+keeps the name civitas. Most repositories still live in cyberuni until each one moves.

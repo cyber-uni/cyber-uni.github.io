@@ -4,8 +4,8 @@ Guidance for AI coding assistants working in this repository.
 
 ## What this repo is
 
-The organization site for spikyuni, an Astro + Starlight site served at
-`https://spikyuni.github.io`. It holds what spans packages: the layer architecture,
+The organization site for cyber-uni, an Astro + Starlight site served at
+`https://cyber-uni.github.io`. It holds what spans packages: the layer architecture,
 the fleet vocabulary, the component index, and cross-package decision records. A package's
 own behavior is documented in that package's repository, not here.
 
@@ -13,8 +13,8 @@ own behavior is documented in that package's repository, not here.
 
 The site covers two things. Keep them apart in every page you write.
 
-- **spikyuni is the organization.** It publishes the `uni-*` agent plugins. Pages
-  about who publishes, what the plugins are, and where to get them say spikyuni:
+- **cyber-uni is the organization.** It publishes the cyber-* agent plugins. Pages
+  about who publishes, what the plugins are, and where to get them say cyber-uni:
   the home page, `about.md`, and `components.md`.
 - **civitas is the design** behind how those packages fit together: the layers, the
   vocabulary, and the rules no single package decides. Its pages live under
@@ -23,7 +23,7 @@ The site covers two things. Keep them apart in every page you write.
 
 "cyber-civitas" stays retired as a brand (decision 0006). Write "civitas" for the design.
 
-**truss** (`cyber-truss`, moving to `uni-truss`) is a separate design idea, the convergence
+**truss** (`cyber-truss`) is a separate design idea, the convergence
 layer. Mention it where civitas relates to it and link to its own docs
 (`https://cyberuni.github.io/cyber-truss/`). Do not move its content here.
 
@@ -44,8 +44,9 @@ pnpm typecheck    # astro check, 0 errors
 - **Root Pages site, no base path.** Internal links are bare paths (`/civitas/layers/`).
 - **The sidebar is explicit** in `astro.config.mjs`. A page without an entry there ships
   unreachable.
-- **Plugin names.** Use the `uni-*` names from decision 0006 with "moving to" wording.
-  Never say a rename has shipped until the package is published under its new name.
+- **Plugin names.** Use the cyber-* names the packages ship under (decision 0009). The
+  `uni-` prefix is retired. Never say a rename has shipped until the package is published
+  under its new name: `cyber-agentkit` still ships as `@cyberuni/agent-harness`.
 - **Claims must be backed.** A component's status comes from npm (`npm view <pkg> version`)
   and its repository. Mark design and prototype work as such; never describe planned
   behavior as shipped.
@@ -57,10 +58,10 @@ pnpm typecheck    # astro check, 0 errors
 
 ## The glyph
 
-The mark is the spikyuni org mark: a lowercase `u` with the four-point AI spark above
+The mark is the cyber-uni org mark: a lowercase `u` with the four-point AI spark above
 it, inside the shared cyber-* frame. It reads as *uni*, and agents. It was candidate C of four
 in the org's glyph study; the others were the cyber-civitas citizens, a plug with the spark, and
-the spark alone. Its source of truth is `brand/` in `spikyuni/.github`, whose AGENTS.md
+the spark alone. Its source of truth is `brand/` in `cyber-uni/.github`, whose AGENTS.md
 "The glyph" section records the study; copy changes from there rather than editing here.
 
 The `u` is a stroke of width 12 (`M44 66v8a20 20 0 0 0 40 0v-8`); the spark is filled
