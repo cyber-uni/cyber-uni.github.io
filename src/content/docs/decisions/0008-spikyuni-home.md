@@ -4,8 +4,8 @@ description: The GitHub org for the uni-* agent plugins is spikyuni, replacing c
 ---
 
 **Status:** Accepted, 2026-10-17. Supersedes the org choice in
-[0006](/decisions/0006-uni-prefix-and-cyberuni-agent-home/). The rest of 0006, including
-the `uni-` prefix, stands.
+[0006](/decisions/0006-uni-prefix-and-cyberuni-agent-home/). The org choice is superseded by
+[0009](/decisions/0009-cyber-uni-home/): the org is now `cyber-uni`.
 
 ## Context
 

@@ -6,7 +6,7 @@ import { defineConfig } from "astro/config";
 // This is the org's root Pages site (`<org>.github.io`), so it is served at `/` and needs no
 // `base`. Internal links in content are bare paths (`/civitas/layers/`).
 export default defineConfig({
-  site: "https://spikyuni.github.io",
+  site: "https://cyber-uni.github.io",
   // The civitas pages moved under /civitas/; the old paths keep working.
   redirects: {
     "/what-is": "/civitas/",
@@ -19,9 +19,9 @@ export default defineConfig({
   },
   integrations: [
     starlight({
-      title: "spikyuni",
+      title: "cyber-uni",
       description:
-        "The organization behind the uni-* AI coding agent plugins, and civitas, the design they follow.",
+        "The organization behind the cyber-* AI coding agent plugins, and civitas, the design they follow.",
       // The cyber-* family mark: the shared command reticle around a per-package glyph
       // (cyberuni/cyber-mux docs/design/icon-system.md). The favicon self-themes; the header
       // logo ships as a light/dark pair because this site picks its theme by `data-theme`,
@@ -30,23 +30,23 @@ export default defineConfig({
       logo: {
         light: "./src/assets/logo-light.svg",
         dark: "./src/assets/logo-dark.svg",
-        alt: "spikyuni",
+        alt: "cyber-uni",
       },
       social: [
         {
           icon: "github",
           label: "GitHub",
-          href: "https://github.com/spikyuni",
+          href: "https://github.com/cyber-uni",
         },
       ],
       customCss: ["./src/styles/global.css"],
       editLink: {
         baseUrl:
-          "https://github.com/spikyuni/spikyuni.github.io/edit/main/",
+          "https://github.com/cyber-uni/cyber-uni.github.io/edit/main/",
       },
       sidebar: [
         {
-          label: "spikyuni",
+          label: "cyber-uni",
           items: [
             { label: "About the org", slug: "about" },
             { label: "Components", slug: "components" },
@@ -73,6 +73,7 @@ export default defineConfig({
             { label: "0006 uni- prefix and cyberuni-agent home", slug: "decisions/0006-uni-prefix-and-cyberuni-agent-home" },
             { label: "0007 The spikyuni marketplace", slug: "decisions/0007-spikyuni-marketplace" },
             { label: "0008 Move to spikyuni", slug: "decisions/0008-spikyuni-home" },
+            { label: "0009 Move to cyber-uni", slug: "decisions/0009-cyber-uni-home" },
           ],
         },
       ],

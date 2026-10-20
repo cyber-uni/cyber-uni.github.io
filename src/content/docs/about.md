@@ -1,11 +1,11 @@
 ---
-title: About spikyuni
-description: The organization behind the uni-* agent plugins, what it holds today, and where to get the plugins.
+title: About cyber-uni
+description: The organization behind the cyber-* agent plugins, what it holds today, and where to get the plugins.
 ---
 
-spikyuni is the GitHub organization and npm owner for unional's line of AI coding
-agent plugins. The plugins are designed to work across agent harnesses, such as Claude Code,
-Cursor, Codex, and GitHub Copilot CLI.
+cyber-uni is the GitHub organization for unional's line of AI coding agent plugins. The
+plugins are designed to work across agent harnesses, such as Claude Code, Cursor, Codex,
+and GitHub Copilot CLI.
 
 The plugins follow one design, [civitas](/civitas/): the layers, vocabulary, and rules that
 let separate packages fit together. This organization publishes the packages; civitas is
@@ -13,28 +13,44 @@ how they are designed.
 
 ## What it holds today
 
-[Decision 0006](/decisions/0006-uni-prefix-and-cyberuni-agent-home/) gave the agent line its
-own organization, and [decision 0008](/decisions/0008-spikyuni-home/) made it spikyuni. Today it holds:
+[Decision 0009](/decisions/0009-cyber-uni-home/) made cyber-uni the home of the agent line.
+On 2026-10-20 it holds:
 
-- [this site](https://github.com/spikyuni/spikyuni.github.io),
-- [`upx`](https://github.com/spikyuni/upx),
-- [`.github`](https://github.com/spikyuni/.github), the organization profile and
-  brand.
+- [`cyber-agentkit`](https://github.com/cyber-uni/cyber-agentkit), the toolkit for working
+  across agent harnesses, with its
+  [documentation](https://cyber-uni.github.io/cyber-agentkit/). The rename to
+  `cyber-agentkit` has not been released: it still ships on npm as
+  `@cyberuni/agent-harness`.
+- [`marketplace`](https://github.com/cyber-uni/marketplace), the plugin catalog.
+- [this site](https://github.com/cyber-uni/cyber-uni.github.io).
+- [`.github`](https://github.com/cyber-uni/.github), the organization profile and brand.
 
-The agent plugins are moving here under `uni-*` names, for example `uni-fleet`,
-`uni-legion`, and `uni-sdd`. No rename has shipped yet: each plugin still lives in
-[cyberuni](https://github.com/cyberuni) under its old name.
+The other plugins live in [cyberuni](https://github.com/cyberuni). Each one moves here over
+time under the cyber-* name it ships under today.
 
 ## Where to get the plugins
 
-[Components](/components/) lists every package with the name it goes by today, its
-repository, and its status. Install a plugin from its repository's instructions, under the
-name in the "Name today" column. Once a plugin moves, its package, plugin name, and
-repository all take the same `uni-*` name, for example `spikyuni/uni-fleet`.
+Add the marketplace, then install a plugin from it. In Claude Code:
+
+```
+/plugin marketplace add cyber-uni/marketplace
+/plugin install <plugin>@cyber-uni
+```
+
+The [marketplace repository](https://github.com/cyber-uni/marketplace) covers the other
+harnesses. If you installed from the earlier `spikyuni` catalog, add the marketplace again
+under its new name.
+
+[Components](/components/) lists every package with its repository and its status.
 
 ## What stays elsewhere
 
+- **spikyuni** keeps [`upx`](https://github.com/spikyuni/upx),
+  [`cynapse`](https://github.com/spikyuni/cynapse), and its own `.github`. The npm
+  `@spikyuni` scope stays reserved.
 - **cyberuni** stays the home of the non-agentic libraries and the YouTube channel.
+- **cyberplace** (`cyberuni/cyberplace`) stays as
+  [decision 0007](/decisions/0007-spikyuni-marketplace/) set out.
 - **The buddy-\* plugins** stay in repobuddy, unchanged.
 - **truss**, the convergence design, keeps its own repository and
   [documentation](https://cyberuni.github.io/cyber-truss/).
@@ -42,6 +58,8 @@ repository all take the same `uni-*` name, for example `spikyuni/uni-fleet`.
 ## The names
 
 The agent line was first branded cyber-arcology, then cyber-civitas. Decision 0006 retired
-both brands and chose cyberuni-agent for the organization.
-[Decision 0008](/decisions/0008-spikyuni-home/) replaced cyberuni-agent with spikyuni: one
-word, easy to say. The design idea kept its name: it is civitas.
+both brands, chose the `uni-` prefix for the plugins, and chose cyberuni-agent for the
+organization. [Decision 0008](/decisions/0008-spikyuni-home/) replaced cyberuni-agent with
+spikyuni. [Decision 0009](/decisions/0009-cyber-uni-home/) moved the line to cyber-uni and
+retired the `uni-` prefix before any plugin shipped under it. The plugins keep their cyber-*
+names, and the org name now matches them. The design idea kept its name: it is civitas.
