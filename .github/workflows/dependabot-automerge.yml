@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - id: metadata
-        uses: dependabot/fetch-metadata@v2
+        uses: dependabot/fetch-metadata@v3
       # Patch and minor only; majors stay manual. With the merge queue on, --auto queues the PR
       # once its required checks pass.
       - if: steps.metadata.outputs.update-type != 'version-update:semver-major'
