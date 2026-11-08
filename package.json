@@ -19,7 +19,7 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.9",
     "@astrojs/starlight-tailwind": "^5.0.0",
-    "@tailwindcss/vite": "^4.3.2",
+    "@tailwindcss/vite": "^4.3.4",
     "tailwindcss": "^4.3.2",
     "typescript": "^6.0.3",
     "vite": "^7.3.2"
