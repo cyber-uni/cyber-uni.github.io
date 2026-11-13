@@ -5,8 +5,9 @@ description: The uni-* plugins are listed in a catalog-only spikyuni/marketplace
 
 **Status:** Accepted, 2026-10-18. Numbered before [0008](/decisions/0008-spikyuni-home/)
 but accepted after it, and relies on its org. The catalog name is superseded by
-[0009](/decisions/0009-cyber-uni-home/): the catalog is now `cyber-uni`. The catalog-only
-repository and the cyberplace rules stand.
+[0009](/decisions/0009-cyber-uni-home/): the catalog is now `cyber-uni`. The rule for when a
+plugin joins is superseded by [0010](/decisions/0010-catalog-lists-shipped-names/). The
+catalog-only repository and the cyberplace rules stand.
 
 ## Context
 
